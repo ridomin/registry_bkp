@@ -75,10 +75,10 @@ const addModel = (file) => {
       console.log('WARN. Target file name exists. You must change the file names when updating versions !!.')
       fileToAdd += '.json'
     }
-    fs.copyFileSync(fileToAdd)
+    fs.copyFileSync(file, fileToAdd)
 
     index[id] = {
-      path: folder + '/' + path.basename(file),
+      path: fileToAdd,
       depends: deps
     }
 

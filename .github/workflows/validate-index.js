@@ -20,6 +20,13 @@ const main = () => {
       console.error(`ERROR: dtmi ${id} not found in ${path}`) 
       process.exit(-1)
     }
+
+    const model = JSON.parse(fs.readFileSync(path,'utf-8'))
+    if (model['@id'] !== id ) {
+      console.error(`ERROR: File ${path} does not match expected dtmi: ${id}, but found ${model['@id']}.`)
+      process.exit(-1)
+    }
+
     const deps = index[id].depends || []
     
     deps.forEach(d => {
