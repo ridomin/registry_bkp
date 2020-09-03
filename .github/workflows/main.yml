@@ -36,4 +36,4 @@ jobs:
           dotnet tool install --global dtdl2-validator
       
       - name: Validate
-        run: '.github\workflows\validatemodels.sh'
+        run: .github/workflows/validatemodels.sh ${{steps.files.outputs.added_modified}}
