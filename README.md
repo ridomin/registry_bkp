@@ -24,4 +24,4 @@ The script `addModel.js` (requires node) can be used to add the required interfa
 
 ## Resolving models
 
-The sister repo [iotmodels/dotnet-resolvers](/iotmodels/dotnetresolvers) shows how to use the `model-index` to resolve models.
+The sister repo [iotmodels/dotnet-resolvers](https://github.com/iotmodels/dotnetresolvers) shows how to use the `model-index` to resolve models.
