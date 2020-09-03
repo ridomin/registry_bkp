@@ -8,7 +8,8 @@
     {
       "@type": ["Telemetry","AngularAcceleration"],
       "name": "workingSet",
-      "schema": "double"
+      "schema": "double",
+      "unit": "radianPerSecondSquared"
     },
     {
       "@type": "Property",
