@@ -6,7 +6,7 @@
   "displayName": "mydevice",
   "contents": [
     {
-      "@type": "Telemetry",
+      "@type": ["Telemetry","AngularAcceleration"],
       "name": "workingSet",
       "schema": "double"
     },
