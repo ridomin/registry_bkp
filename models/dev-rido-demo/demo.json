@@ -1,11 +1,11 @@
 {
   "@context": "dtmi:dtdl:context;2",
-  "@id": "dtmi:dev:rido:demo;1",
+  "@id": "dtmi:dev:rido:demo;2",
   "@type": "Interface",
   "displayName": "demo",
   "contents": [
     { 
-      "@type" : "Property", 
+      "@type" : ["Property", "Aceleration"], 
       "name" : "realDemo", 
       "schema" : "float" 
     },
