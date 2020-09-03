@@ -37,7 +37,7 @@
     ]
   },
   "dtmi:com:example:thermostat;1": {
-    "path": "models/com-example-thermostat/thermostat.json.json",
+    "path": "models/com-example-thermostat/thermostat.json",
     "depends": [
       "dtmi:azure:DeviceManagement:DeviceInformation;1"
     ]
