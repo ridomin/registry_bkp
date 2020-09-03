@@ -1,4 +1,7 @@
-for f in models/*/*.json
+for f in "$@"
 do
-    dtdl2-validator $f
+    if [ $f != model-index.json ]
+    then
+        dtdl2-validator $f local
+    fi
 done
