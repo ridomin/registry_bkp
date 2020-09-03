@@ -1,5 +1,9 @@
 {
   "dtmi:azure:DeviceManagement:DeviceInformation;1": {
     "path": "models/azure-devicemanagement-deviceinformation/deviceinformation.json"
+  },
+  "dtmi:dev:rido:demo;1": {
+    "path": "models/dev-rido-demo/demo.json",
+    "depends": []
   }
 }
