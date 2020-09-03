@@ -1,6 +1,6 @@
 for f in "$@"
 do
-    if [ $f != model-index.json ]
+    if [[ $f == *"models/"* ]]
     then
         dtdl2-validator $f local
     fi
