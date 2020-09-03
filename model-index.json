@@ -13,5 +13,20 @@
   "dtmi:dev:rido:demo;2": {
     "path": "models/dev-rido-demo/demo2.json",
     "depends": []
+  },
+  "dtmi:my:device:base;1": {
+    "path": "models/my-device-base/base.json",
+    "depends": []
+  },
+  "dtmi:my:device:interface;1": {
+    "path": "models/my-device-interface/interface.json",
+    "depends": []
+  },
+  "dtmi:my:device:model;1": {
+    "path": "models/my-device-model/mydevice.json",
+    "depends": [
+      "dtmi:my:device:base;1",
+      "dtmi:my:device:interface;1"
+    ]
   }
 }
