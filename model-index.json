@@ -1,0 +1,5 @@
+{
+  "dtmi:azure:DeviceManagement:DeviceInformation;1": {
+    "path": "models/azure-devicemanagement-deviceinformation/deviceinformation.json"
+  }
+}

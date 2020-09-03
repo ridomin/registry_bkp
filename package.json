@@ -1,0 +1,30 @@
+{
+  "name": "@iotmodels/registry",
+  "version": "0.0.1",
+  "description": "This repo contains a prototype to share DTDL models using GitHub pages",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iotmodels/registry.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iotmodels/issues"
+  },
+  "standard": {
+    "globals": [
+      "Mustache"
+    ],
+    "ignore": [
+      "*.d.ts"
+    ]
+  },
+  "devDependencies": {
+    "@types/mustache": "^4.0.1",
+    "standard": "^14.3.4"
+  }
+}
