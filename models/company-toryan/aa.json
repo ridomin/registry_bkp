@@ -1,0 +1,14 @@
+{
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:company:toryan;1",
+    "@type": "Interface",
+    "displayName": "toryan",
+    "contents": [
+      {
+        "@type": "Property",
+        "name": "deviceStatus",
+        "schema": "string",
+        "writable": true
+      }
+    ]
+  }

@@ -1,5 +1,19 @@
 {
   "dtmi:azure:DeviceManagement:DeviceInformation;1": {
     "path": "models/azure-devicemanagement-deviceinformation/deviceinformation.json"
+  },
+  "dtmi:company:toryan;1": {
+    "path": "models/company-toryan/aa.json",
+    "depends": []
+  },
+  "dtmi:com:samples:baseInterface;1": {
+    "path": "models/com-samples-baseinterface/baseInterface.json",
+    "depends": []
+  },
+  "dtmi:com:samples:baseComponent;1": {
+    "path": "models/com-samples-basecomponent/baseComponent.json",
+    "depends": [
+      "dtmi:com:samples:baseInterface;1"
+    ]
   }
 }
