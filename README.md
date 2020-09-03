@@ -1,4 +1,4 @@
-# IoT Model Registry
+# IoT Models Registry
 
 This repository contains [DTDL](https://aka.ms/dtdl) model definitions.
 
@@ -12,7 +12,7 @@ The models, and the index are available in:
 
 This repo accepts new model submission following the next rules.
 
-- Valid DTDL files
+- Valid DTDL files.
 - Dependencies can be resolved using the index
 - The files are stored following the `models` folder hierarchy
 
@@ -21,6 +21,14 @@ There are automatic checks in place per each PR.
 ### Adding a new interface
 
 The script `addModel.js` (requires node) can be used to add the required interface to the `models` folder and update the `model-index`
+
+### Validation
+
+The repo provides some tools and scripts to validate your models.
+
+`dtdl2-validator`
+
+`validate-index`
 
 ## Resolving models
 
