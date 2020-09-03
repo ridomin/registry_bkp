@@ -71,7 +71,7 @@ const addModel = (file) => {
     }
 
     let fileToAdd = folder + '/' + path.basename(file)
-    if (fs.existsSyncxists(fileToAdd)) {
+    if (fs.existsSync(fileToAdd)) {
       console.log('WARN. Target file name exists. You must change the file names when updating versions !!.')
       fileToAdd += '.json'
     }
