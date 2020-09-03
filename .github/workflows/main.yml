@@ -23,7 +23,7 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - name: Checkout code
-      - uses: actions/checkout@v2
+        uses: actions/checkout@v2
      
       - id: files
         uses: jitterbit/get-changed-files@v1
@@ -31,6 +31,7 @@ jobs:
       - uses: actions/setup-dtonet@v1
         with:
           dotnet-version: 3.1.x
+
       - run:
           dotnet tool install --globals dtdl2-validator
           dtdl2-validator --files ${{steps.files.outputs.added_modified}}
