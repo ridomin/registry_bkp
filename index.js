@@ -1,5 +1,5 @@
 (async () => {
-  let models = []
+  let index = []
 
   const gbid = (id) => {
     const el = document.getElementById(id)
@@ -9,7 +9,7 @@
     return el
   }
 
-  const loadModels = (path) => {
+  const loadIndex = (path) => {
     return new Promise((resolve, reject) => {
       window.fetch(path)
         .then(r => r.json())
@@ -24,15 +24,16 @@
 
   const init = async () => {
     const path = 'model-index.json'
-    models = await loadModels(path)
+    index = await loadIndex(path)
 
-    const modelArray = Object.keys(models).map(k => {
+    const modelArray = Object.keys(index).map(k => {
       return {
         dtmi: k,
-        path: models[k].path,
-        depends: models[k].depends
+        path: index[k].path,
+        depends: index[k].depends
       }
     })
+    modelArray.sort(function (a, b) { return (a.dtmi > b.dtmi) ? 1 : -1 })
 
     bindTemplate('models-list-template', modelArray, 'rendered')
   }

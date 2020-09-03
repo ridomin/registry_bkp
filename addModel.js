@@ -28,7 +28,9 @@ const getDependencies = (rootJson) => {
   const comps = rootJson.contents.filter(c => c['@type'] === 'Component')
   comps.forEach(c => {
     if (typeof c.schema !== 'object') {
-      deps.push(c.schema)
+      if (deps.indexOf(c.schema) === -1) {
+        deps.push(c.schema)
+      }
     }
   })
   return deps
