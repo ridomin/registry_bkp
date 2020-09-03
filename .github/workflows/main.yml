@@ -33,7 +33,7 @@ jobs:
           dotnet-version: 3.1.x
 
       - run:
-          dotnet tool install --globals dtdl2-validator
+          dotnet tool install --global dtdl2-validator
           dtdl2-validator --files ${{steps.files.outputs.added_modified}}
             
 
