@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI
+name: validate-models
 
 # Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the master branch
@@ -36,4 +36,4 @@ jobs:
           dotnet tool install --global dtdl2-validator
       
       - name: Validate
-        run: .github/workflows/validatemodels.sh ${{steps.files.outputs.added_modified}}
+        run: .github/workflows/validate-models.sh ${{steps.files.outputs.added_modified}}
