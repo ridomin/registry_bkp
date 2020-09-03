@@ -30,7 +30,7 @@
     ]
   },
   "dtmi:my:device:model;3": {
-    "path": "models/my-device-model/mydevice.json.json",
+    "path": "models/my-device-model/mydevice.3.json",
     "depends": [
       "dtmi:my:device:base;1",
       "dtmi:my:device:interface;1"
