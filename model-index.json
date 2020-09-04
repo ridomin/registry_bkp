@@ -61,5 +61,9 @@
   "dtmi:com:SmartThings:SmartKnife;1": {
     "path": "models/com-smartthings-smartknife/SmartKnife.json",
     "depends": []
+  },
+  "dtmi:com:SmartThings:smartspoon;1": {
+    "path": "models/com-smartthings-smartspoon/smartspoon.json",
+    "depends": []
   }
 }
