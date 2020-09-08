@@ -65,5 +65,15 @@
   "dtmi:com:SmartThings:smartspoon;1": {
     "path": "models/com-smartthings-smartspoon/smartspoon.json",
     "depends": []
+  },
+  "dtmi:com:myDevice;1": {
+    "path": [ 
+      "models/com-myDevice/myDevice.json",
+      "models/com-myDevice/diagnostics.json",
+      "models/com-myDevice/base.json"
+    ],
+    "depends": [
+      "dtmi:azure:DeviceManagement:DeviceInformation;1"
+    ]
   }
 }

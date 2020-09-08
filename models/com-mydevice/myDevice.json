@@ -1,0 +1,25 @@
+{
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:com:myDevice;1",
+    "extends": "dtmi:com:base;1",
+    "@type": "Interface",
+    "contents": [
+        { 
+            "@type" : "Property", 
+            "name" : "serialNumber", 
+            "schema" : "string" 
+        },
+        { 
+            "@type" : "Telemetry", 
+            "name" : "temperature", 
+            "schema" : "dtmi:com:diagnostics:diagInfo;1" 
+        },
+        { 
+            "@type" : "Command", 
+            "name" : "reboot", 
+            "request" : {  
+                "name" : "rebootRequest", 
+                "schema" : "integer" } 
+        }
+    ]
+}

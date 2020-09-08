@@ -1,0 +1,33 @@
+{
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:com:diagnostics;1",
+    "@type": "Interface",
+    "contents": [
+      {
+        "@type": "Property",
+        "name": "diagInfo",
+        "schema": {
+          "@id": "dtmi:com:diagnostics:diagInfo;1",
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "osName", "schema": "string"
+            },
+            {
+              "name": "osVersion", "schema": "string"
+            },
+            {
+              "name": "sdkVersion", "schema": "string"
+            }
+          ]
+        }
+      },
+      { 
+        "@type" : "Command", 
+        "name" : "getVersion", 
+        "request" : {  
+          "name" : "getVersionRequest", 
+          "schema" : "integer" } 
+      }
+    ]
+  }
