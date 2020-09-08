@@ -65,5 +65,21 @@
   "dtmi:com:SmartThings:smartspoon;1": {
     "path": "models/com-smartthings-smartspoon/smartspoon.json",
     "depends": []
+  },
+  "dtmi:com:diagnostics;1": {
+    "path": "models/com-diagnostics/diagnostics.json",
+    "depends": []
+  },
+  "dtmi:com:base;1": {
+    "path": "models/com-base/base.json",
+    "depends": [
+      "dtmi:com:diagnostics;1"
+    ]
+  },
+  "dtmi:com:myDevice;1": {
+    "path": "models/com-mydevice/myDevice.json",
+    "depends": [
+      "dtmi:com:base;1"
+    ]
   }
 }

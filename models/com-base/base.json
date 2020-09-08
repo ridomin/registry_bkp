@@ -1,0 +1,17 @@
+{
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:com:base;1",
+    "@type": "Interface",
+    "contents": [
+        { 
+            "@type" : "Property", 
+            "name" : "customerName", 
+            "schema" : "string" 
+        },
+        { 
+            "@type" : "Component", 
+            "name" : "diagnostics", 
+            "schema" : "dtmi:com:diagnostics;1" 
+        }
+    ]
+}
