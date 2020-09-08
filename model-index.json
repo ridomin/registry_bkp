@@ -68,9 +68,9 @@
   },
   "dtmi:com:myDevice;1": {
     "path": [ 
-      "models/com-myDevice/myDevice.json",
-      "models/com-myDevice/diagnostics.json",
-      "models/com-myDevice/base.json"
+      "models/com-mydevice/myDevice.json",
+      "models/com-mydevice/diagnostics.json",
+      "models/com-mydevice/base.json"
     ],
     "depends": [
       "dtmi:azure:DeviceManagement:DeviceInformation;1"
